@@ -1,8 +1,6 @@
 @import '_variables.scss';
 @import '_mixins.scss';
 
-
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -42,14 +40,17 @@ p {
   padding: 40px 0;
   display: flex;
 }
-.about_title{
+
+.about_title {
   text-align: center;
 }
-.picture-container{
+
+.picture-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .bottom_text_container {
   padding-left: 20px;
   @media(max-width: 800px) {
@@ -68,7 +69,8 @@ p {
   @include navigation_container;
   font-size: 1rem;
 }
-.nav_button{
+
+.nav_button {
   @include navigation_item;
 }
 
@@ -81,7 +83,8 @@ p {
 .title {
   padding: 10px 20px;
 }
-.graph{
+
+.graph {
   max-width: 100%;
   height: auto;
 }
