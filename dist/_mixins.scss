@@ -1,0 +1,35 @@
+@keyframes hoveranimation {
+  0% {
+    padding: 15px 40px;
+  }
+
+  100% {
+    padding: 10px 50px;
+  }
+};
+@mixin navigation_container {
+  background-color: $color-primary-3;
+  height: auto;
+  padding: 5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin navigation_item {
+  margin-right: 20px;
+  text-decoration: none;
+  background-color: $color-primary-0;
+  padding: 15px 40px;
+  font-size: 1.25rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+  &:hover {
+    background-color: white;
+    color: $color-primary-0;
+    animation-name: hoveranimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+}
