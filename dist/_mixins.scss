@@ -16,7 +16,7 @@
   flex-direction: row;
   align-items: center;
   @media(max-width: 500px) {
-    align-items: flex-start;
+    align-items: center   ;
   }
 }
 @mixin navigation_item {
