@@ -11,23 +11,27 @@ nav {
   align-items: center;
   width: auto;
   height: auto;
-}
-
-h1 {
-  color: white;
-  margin: 0;
-  font-family: 'Biryani', sans-serif;
+  @media(max-width: 500px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.75rem;
   text-decoration: underline;
+  @media(max-width: 500px) {
+    font-size: 1.25rem;
+  }
 }
 
 p {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
+  @media(max-width: 500px) {
+    font-size: 1rem;
+  }
 }
 
 .container {
@@ -43,10 +47,16 @@ p {
 
 .bottom_text_container {
   padding-left: 20px;
+  @media(max-width: 800px) {
+    padding: 0;
+  }
 }
 
 .top_text_container {
   padding-right: 20px;
+  @media(max-width: 800px) {
+    padding: 0;
+  }
 }
 
 .navigation-container {
@@ -54,12 +64,32 @@ p {
   font-size: 1rem;
 }
 
+.logo {
+  @media(max-width: 990px) {
+    display: none;
+  }
+}
+
 .title {
   padding: 10px 20px;
 }
+.graph{
+  max-width: 100%;
+  height: auto;
+}
 
-.content {
+.content-1 {
   display: flex;
+  @media(max-width: 800px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.content-2 {
+  display: flex;
+  @media(max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .text_container {

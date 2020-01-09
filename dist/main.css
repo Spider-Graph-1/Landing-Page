@@ -15,12 +15,22 @@ a {
   color: white;
   font-family: "Roboto", sans-serif;
 }
+@media (max-width: 750px) {
+  a {
+    margin: 0;
+    padding: 10px;
+  }
+}
 a:hover {
   background-color: white;
   color: #333B3C;
-  animation-name: hoveranimation;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+}
+@media (min-width: 750px) {
+  a:hover {
+    animation-name: hoveranimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
 }
 
 nav {
@@ -30,11 +40,11 @@ nav {
   width: auto;
   height: auto;
 }
-
-h1 {
-  color: white;
-  margin: 0;
-  font-family: "Biryani", sans-serif;
+@media (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 h3 {
@@ -42,10 +52,20 @@ h3 {
   font-size: 1.75rem;
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
 
 p {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 .container {
@@ -55,16 +75,26 @@ p {
 }
 
 .content {
-  padding: 40px 0px;
+  padding: 40px 0;
   display: flex;
 }
 
 .bottom_text_container {
   padding-left: 20px;
 }
+@media (max-width: 800px) {
+  .bottom_text_container {
+    padding: 0;
+  }
+}
 
 .top_text_container {
   padding-right: 20px;
+}
+@media (max-width: 800px) {
+  .top_text_container {
+    padding: 0;
+  }
 }
 
 .navigation-container {
@@ -77,13 +107,43 @@ p {
   align-items: center;
   font-size: 1rem;
 }
+@media (max-width: 500px) {
+  .navigation-container {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 990px) {
+  .logo {
+    display: none;
+  }
+}
 
 .title {
   padding: 10px 20px;
 }
 
-.content {
+.graph {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-1 {
   display: flex;
+}
+@media (max-width: 800px) {
+  .content-1 {
+    flex-direction: column-reverse;
+  }
+}
+
+.content-2 {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .content-2 {
+    flex-direction: column;
+  }
 }
 
 .text_container {
