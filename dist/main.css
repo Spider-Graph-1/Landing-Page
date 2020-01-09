@@ -6,33 +6,6 @@
     padding: 10px 50px;
   }
 }
-a {
-  margin-right: 20px;
-  text-decoration: none;
-  background-color: #333B3C;
-  padding: 15px 40px;
-  font-size: 1.25rem;
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-@media (max-width: 750px) {
-  a {
-    margin: 0;
-    padding: 10px;
-  }
-}
-a:hover {
-  background-color: white;
-  color: #333B3C;
-}
-@media (min-width: 750px) {
-  a:hover {
-    animation-name: hoveranimation;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
-}
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -79,6 +52,16 @@ p {
   display: flex;
 }
 
+.about_title {
+  text-align: center;
+}
+
+.picture-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .bottom_text_container {
   padding-left: 20px;
 }
@@ -110,6 +93,33 @@ p {
 @media (max-width: 500px) {
   .navigation-container {
     align-items: flex-start;
+  }
+}
+
+.nav_button {
+  margin-right: 20px;
+  text-decoration: none;
+  background-color: #333B3C;
+  padding: 15px 40px;
+  font-size: 1.25rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 750px) {
+  .nav_button {
+    margin: 0;
+    padding: 10px;
+  }
+}
+.nav_button:hover {
+  background-color: white;
+  color: #333B3C;
+}
+@media (min-width: 750px) {
+  .nav_button:hover {
+    animation-name: hoveranimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
   }
 }
 

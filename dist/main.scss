@@ -1,9 +1,7 @@
 @import '_variables.scss';
 @import '_mixins.scss';
 
-a {
-  @include navigation_item;
-}
+
 
 nav {
   display: flex;
@@ -44,7 +42,14 @@ p {
   padding: 40px 0;
   display: flex;
 }
-
+.about_title{
+  text-align: center;
+}
+.picture-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .bottom_text_container {
   padding-left: 20px;
   @media(max-width: 800px) {
@@ -62,6 +67,9 @@ p {
 .navigation-container {
   @include navigation_container;
   font-size: 1rem;
+}
+.nav_button{
+  @include navigation_item;
 }
 
 .logo {
