@@ -41,7 +41,30 @@ p {
     padding: 0;
   }
 }
-
+.row-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media(max-width: 750px){
+    flex-direction: column;
+  }
+}
+.row-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media(max-width: 750px){
+    flex-direction: column;
+  }
+}
+.row-3{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  @media(max-width: 750px){
+    flex-direction: column;
+  }
+}
 .container {
   max-width: 1000px;
   width: 100%;
@@ -52,6 +75,12 @@ p {
   padding: 40px 0;
   display: flex;
 }
+.Team_Lead{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 
 .picture-container {
   display: flex;
@@ -61,6 +90,10 @@ p {
 
 .profile_picture {
   padding: 5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .question {
