@@ -85,12 +85,17 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  text-align: center;
 }
 
-.picture-container {
+.profile_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+  @media(max-width: 750px) {
+    flex-direction: column;
+  }
 }
 
 .profile_picture {
@@ -99,6 +104,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
 }
 
 .question {

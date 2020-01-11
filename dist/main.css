@@ -104,12 +104,19 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  text-align: center;
 }
 
-.picture-container {
+.profile_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+}
+@media (max-width: 750px) {
+  .profile_container {
+    flex-direction: column;
+  }
 }
 
 .profile_picture {
